@@ -35,6 +35,11 @@ bnd-release	=	https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBui
 		local=${build}/release;\
 		pretty=true
 
+-plugin.enroute.orbitrepo = \
+	aQute.bnd.deployer.repository.FixedIndexedRepo; \
+		name=Eclipse Orbit; \
+		locations=http://download.eclipse.org/tools/orbit/downloads/drops/R20150519210750/repository/index.xml.gz;\
+		pretty=true
 
 -releaserepo: 					Release
 javac.source: 					1.8
